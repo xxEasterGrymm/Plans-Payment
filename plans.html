@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="plans.css" />
+  </head>
+  <body>
+    <div class="planFormContainer" data-uia="form-plan-selection">
+      <div>
+        <div class="stepHeader-container" data-uia="header">
+          <div class="stepHeader" role="status">
+            <h1 class="stepTitle" data-uia="stepTitle">
+              Choose the plan that’s right for you
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="planGrid planGrid--has4Plans" data-uia="plan-grid">
+        <div class="planGrid__header">
+          <div
+            class="planGrid__selector planGrid__planSelector"
+            role="radiogroup"
+            aria-label="Plan"
+            aria-describedby="planGrid_planChoice_description"
+            data-uia="plan-grid-plan-selector"
+          >
+            <span
+              class="planGrid__selectorDescription"
+              id="planGrid_planChoice_description"
+              data-uia="plan-grid-plan-selector+description"
+              aria-hidden="true"
+              >Select the plan you'd like</span
+            ><label
+              class="planGrid__selectorChoice planGrid__planChoice"
+              for="planGrid_planChoice_0"
+              data-uia="plan-grid-plan-selector+label-text_1_stream_name"
+              ><input
+                type="radio"
+                name="planChoice"
+                class="planGrid__selectorInput planGrid__planInput"
+                id="planGrid_planChoice_0"
+                data-uia="plan-grid-plan-selector+input-text_1_stream_name"
+                value="114120"
+              /><span class="planGrid__selectorLabel planGrid__planLabel"
+                >Mobile</span
+              ></label
+            ><label
+              class="planGrid__selectorChoice planGrid__planChoice"
+              for="planGrid_planChoice_1"
+              data-uia="plan-grid-plan-selector+label-text_1_stream_name"
+              ><input
+                type="radio"
+                name="planChoice"
+                class="planGrid__selectorInput planGrid__planInput"
+                id="planGrid_planChoice_1"
+                data-uia="plan-grid-plan-selector+input-text_1_stream_name"
+                value="314001031"
+                checked=""
+              /><span class="planGrid__selectorLabel planGrid__planLabel"
+                >Basic</span
+              ></label
+            ><label
+              class="planGrid__selectorChoice planGrid__planChoice"
+              for="planGrid_planChoice_2"
+              data-uia="plan-grid-plan-selector+label-text_2_stream_name"
+              ><input
+                type="radio"
+                name="planChoice"
+                class="planGrid__selectorInput planGrid__planInput"
+                id="planGrid_planChoice_2"
+                data-uia="plan-grid-plan-selector+input-text_2_stream_name"
+                value="10322"
+              /><span class="planGrid__selectorLabel planGrid__planLabel"
+                >Standard</span
+              ></label
+            ><label
+              class="planGrid__selectorChoice planGrid__planChoice"
+              for="planGrid_planChoice_3"
+              data-uia="plan-grid-plan-selector+label-text_4_stream_name"
+              ><input
+                type="radio"
+                name="planChoice"
+                class="planGrid__selectorInput planGrid__planInput"
+                id="planGrid_planChoice_3"
+                data-uia="plan-grid-plan-selector+input-text_4_stream_name"
+                value="10341"
+              /><span class="planGrid__selectorLabel planGrid__planLabel"
+                >Premium</span
+              ></label
+            >
+          </div>
+        </div>
+        <table
+          class="planGrid__featureTable"
+          role="table"
+          data-uia="plan-grid-feature-table"
+        >
+          <caption class="planGrid__featureTableCaption">
+            Netflix Plan Features
+          </caption>
+          <tbody
+            class="planGrid__featureTableBody"
+            data-uia="plan-grid-feature-table-body"
+          >
+            <tr
+              role="row"
+              class="planGrid__featureTableRow planGrid__featureTableRow--planPrice"
+            >
+              <td
+                class="planGrid__cell planGrid__featureCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+planPrice-feature"
+              >
+                Monthly price
+              </td>
+              <td
+                class="planGrid__cell planGrid__cell--isSelected planGrid__stringCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+planPrice-text_1_stream_name"
+                aria-label="Mobile"
+              >
+                ₹&nbsp;100
+              </td>
+              <td
+                class="planGrid__cell planGrid__stringCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+planPrice-text_1_stream_name"
+                aria-label="Basic"
+              >
+                ₹&nbsp;200
+              </td>
+              <td
+                class="planGrid__cell planGrid__stringCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+planPrice-text_2_stream_name"
+                aria-label="Standard"
+              >
+                ₹&nbsp;500
+              </td>
+              <td
+                class="planGrid__cell planGrid__stringCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+planPrice-text_4_stream_name"
+                aria-label="Premium"
+              >
+                ₹&nbsp;700
+              </td>
+            </tr>
+            <tr
+              role="row"
+              class="planGrid__featureTableRow planGrid__featureTableRow--videoQuality"
+            >
+              <td
+                class="planGrid__cell planGrid__featureCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+videoQuality-feature"
+              >
+                Video quality
+              </td>
+              <td
+                class="planGrid__cell planGrid__cell--isSelected planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+videoQuality-text_1_stream_name"
+                aria-label="Mobile"
+              >
+                <div class="planGrid__videoQualityLabel">Good</div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+videoQuality-text_1_stream_name"
+                aria-label="Basic"
+              >
+                <div class="planGrid__videoQualityLabel">Good</div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+videoQuality-text_2_stream_name"
+                aria-label="Standard"
+              >
+                <div class="planGrid__videoQualityLabel">Better</div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+videoQuality-text_4_stream_name"
+                aria-label="Premium"
+              >
+                <div class="planGrid__videoQualityLabel">Best</div>
+              </td>
+            </tr>
+            <tr
+              role="row"
+              class="planGrid__featureTableRow planGrid__featureTableRow--resolution"
+            >
+              <td
+                class="planGrid__cell planGrid__featureCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+resolution-feature"
+              >
+                Resolution
+              </td>
+              <td
+                class="planGrid__cell planGrid__cell--isSelected planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+resolution-text_1_stream_name"
+                aria-label="Mobile"
+              >
+                <div class="planGrid__videoQualityLabel">480p</div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+resolution-text_1_stream_name"
+                aria-label="Basic"
+              >
+                <div class="planGrid__videoQualityLabel">720p</div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+resolution-text_2_stream_name"
+                aria-label="Standard"
+              >
+                <div class="planGrid__videoQualityLabel">1080p</div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__videoQualityCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+resolution-text_4_stream_name"
+                aria-label="Premium"
+              >
+                <div class="planGrid__videoQualityLabel">4K+HDR</div>
+              </td>
+            </tr>
+            <tr
+              role="row"
+              class="planGrid__featureTableRow planGrid__featureTableRow--supportedDevices"
+            >
+              <td
+                class="planGrid__cell planGrid__featureCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+supportedDevices-feature"
+              >
+                Devices you can use to watch
+              </td>
+              <td
+                class="planGrid__cell planGrid__cell--isSelected planGrid__supportedDevicesCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+supportedDevices-text_1_stream_name"
+                aria-label="Mobile"
+              >
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Phone</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                </div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__supportedDevicesCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+supportedDevices-text_1_stream_name"
+                aria-label="Basic"
+              >
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Phone</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Computer</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">TV</div>
+                </div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__supportedDevicesCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+supportedDevices-text_2_stream_name"
+                aria-label="Standard"
+              >
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Phone</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Computer</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">TV</div>
+                </div>
+              </td>
+              <td
+                class="planGrid__cell planGrid__supportedDevicesCell"
+                role="cell"
+                data-uia="plan-grid-feature-table-cell+supportedDevices-text_4_stream_name"
+                aria-label="Premium"
+              >
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Phone</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Tablet</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">Computer</div>
+                </div>
+                <br/>
+                <div>
+                  <div class="planGrid__supportedDevicesLabel">TV</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="submitBtnContainer">
+      <button
+        type="button"
+        autocomplete="off"
+        tabindex="0"
+        class="nf-btn nf-btn-primary nf-btn-solid nf-btn-oversize"
+        data-uia="cta-plan-selection"
+        placeholder="planSelection_button_continue"
+      >
+        Next
+      </button>
+    </div>
+  </body>
+</html>
